@@ -24,7 +24,7 @@ class File extends FileStorage{
         if(false === file_put_contents($filename,$content)){
             E(L('_STORAGE_WRITE_ERROR_').':'.$filename);
         }else{
-            $this->contents[$filename]=$content;
+            // $this->contents[$filename]=$content;
             return true;
         }
 	}
